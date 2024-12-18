@@ -191,7 +191,7 @@ class _DashboardDataPageState extends State<DashboardDataPage> {
                                 children: [
                                   Column(
                                       crossAxisAlignment:
-                                      CrossAxisAlignment.start,
+                                          CrossAxisAlignment.start,
                                       children: [
                                         Padding(
                                           padding: const EdgeInsets.only(
@@ -203,7 +203,7 @@ class _DashboardDataPageState extends State<DashboardDataPage> {
                                         ),
                                         Padding(
                                           padding:
-                                          const EdgeInsets.only(left: 10.0),
+                                              const EdgeInsets.only(left: 10.0),
                                           child: Text(
                                             '- Number of Human: ${viewModel.getNumberOfHuman()}',
                                             style: TextStyle(fontSize: 24),
@@ -211,7 +211,7 @@ class _DashboardDataPageState extends State<DashboardDataPage> {
                                         ),
                                         Padding(
                                           padding:
-                                          const EdgeInsets.only(left: 10.0),
+                                              const EdgeInsets.only(left: 10.0),
                                           child: Text(
                                             '- Number of Alive Character: ${viewModel.getNumberOfAliveCharacter()}',
                                             style: TextStyle(fontSize: 24),
@@ -219,7 +219,7 @@ class _DashboardDataPageState extends State<DashboardDataPage> {
                                         ),
                                         Padding(
                                           padding:
-                                          const EdgeInsets.only(left: 10.0),
+                                              const EdgeInsets.only(left: 10.0),
                                           child: Text(
                                             '- Number of Dead Character: ${viewModel.getNumberOfDeadCharacter()}',
                                             style: TextStyle(fontSize: 24),
@@ -227,7 +227,7 @@ class _DashboardDataPageState extends State<DashboardDataPage> {
                                         ),
                                         Padding(
                                           padding:
-                                          const EdgeInsets.only(left: 10.0),
+                                              const EdgeInsets.only(left: 10.0),
                                           child: Text(
                                             '- Number of Unknown Character: ${viewModel.getNumberOfUnknownCharacter()}',
                                             style: TextStyle(fontSize: 24),
@@ -235,7 +235,7 @@ class _DashboardDataPageState extends State<DashboardDataPage> {
                                         ),
                                         Padding(
                                           padding:
-                                          const EdgeInsets.only(left: 10.0),
+                                              const EdgeInsets.only(left: 10.0),
                                           child: Text(
                                             '- Number of Male Character: ${viewModel.getNumberOfGenderCharacter(Gender.male)}',
                                             style: TextStyle(fontSize: 24),
@@ -243,7 +243,7 @@ class _DashboardDataPageState extends State<DashboardDataPage> {
                                         ),
                                         Padding(
                                           padding:
-                                          const EdgeInsets.only(left: 10.0),
+                                              const EdgeInsets.only(left: 10.0),
                                           child: Text(
                                             '- Number of Female Character: ${viewModel.getNumberOfGenderCharacter(Gender.female)}',
                                             style: TextStyle(fontSize: 24),
@@ -251,7 +251,7 @@ class _DashboardDataPageState extends State<DashboardDataPage> {
                                         ),
                                         Padding(
                                           padding:
-                                          const EdgeInsets.only(left: 10.0),
+                                              const EdgeInsets.only(left: 10.0),
                                           child: Text(
                                             '- Number of Genderless Character: ${viewModel.getNumberOfGenderCharacter(Gender.genderless)}',
                                             style: TextStyle(fontSize: 24),
@@ -259,7 +259,7 @@ class _DashboardDataPageState extends State<DashboardDataPage> {
                                         ),
                                         Padding(
                                           padding:
-                                          const EdgeInsets.only(left: 10.0),
+                                              const EdgeInsets.only(left: 10.0),
                                           child: Text(
                                             '- Number of Unknown Gender Character: ${viewModel.getNumberOfGenderCharacter(Gender.unknown)}',
                                             style: TextStyle(fontSize: 24),
@@ -267,7 +267,7 @@ class _DashboardDataPageState extends State<DashboardDataPage> {
                                         ),
                                         Padding(
                                           padding:
-                                          const EdgeInsets.only(left: 10.0),
+                                              const EdgeInsets.only(left: 10.0),
                                           child: Text(
                                             '- Number of spices: ${viewModel.getAllSpecies().length}',
                                             style: TextStyle(fontSize: 24),
@@ -283,21 +283,21 @@ class _DashboardDataPageState extends State<DashboardDataPage> {
                                         ),
                                         Padding(
                                           padding:
-                                          const EdgeInsets.only(left: 10.0),
+                                              const EdgeInsets.only(left: 10.0),
                                           child: ListView.builder(
                                               shrinkWrap: true,
                                               physics:
-                                              NeverScrollableScrollPhysics(),
+                                                  NeverScrollableScrollPhysics(),
                                               itemCount: speciesList.length,
                                               itemBuilder: (context, index) {
                                                 return Padding(
                                                   padding:
-                                                  const EdgeInsets.only(
-                                                      left: 10.0),
+                                                      const EdgeInsets.only(
+                                                          left: 10.0),
                                                   child: Text(
                                                     speciesList[index],
                                                     style:
-                                                    TextStyle(fontSize: 24),
+                                                        TextStyle(fontSize: 24),
                                                   ),
                                                 );
                                               }),

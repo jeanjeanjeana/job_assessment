@@ -8,6 +8,7 @@ class CharacterViewModel extends ChangeNotifier {
   final ApiService _apiService = ApiService();
 
   ResultState<List<Results>> _state = ResultState.loading();
+
   ResultState<List<Results>> get state => _state;
 
   int _currentPage = 1;
@@ -37,40 +38,55 @@ class CharacterViewModel extends ChangeNotifier {
   }
 
   int getNumberOfHuman() {
-    if(state.hasData) {
-      return state.data?.where((character) => character.species == "Human").length ?? 0;
+    if (state.hasData) {
+      return state.data
+              ?.where((character) => character.species == "Human")
+              .length ??
+          0;
     } else {
       return 0;
     }
   }
 
   int getNumberOfAliveCharacter() {
-    if(state.hasData) {
-      return state.data?.where((character) => character.status == "Alive").length ?? 0;
+    if (state.hasData) {
+      return state.data
+              ?.where((character) => character.status == "Alive")
+              .length ??
+          0;
     } else {
       return 0;
     }
   }
 
   int getNumberOfDeadCharacter() {
-    if(state.hasData) {
-      return state.data?.where((character) => character.status == "Dead").length ?? 0;
+    if (state.hasData) {
+      return state.data
+              ?.where((character) => character.status == "Dead")
+              .length ??
+          0;
     } else {
       return 0;
     }
   }
 
   int getNumberOfUnknownCharacter() {
-    if(state.hasData) {
-      return state.data?.where((character) => character.status == "unknown").length ?? 0;
+    if (state.hasData) {
+      return state.data
+              ?.where((character) => character.status == "unknown")
+              .length ??
+          0;
     } else {
       return 0;
     }
   }
 
   int getNumberOfGenderCharacter(Gender gender) {
-    if(state.hasData) {
-      return state.data?.where((character) => character.gender == gender.name).length ?? 0;
+    if (state.hasData) {
+      return state.data
+              ?.where((character) => character.gender == gender.name)
+              .length ??
+          0;
     } else {
       return 0;
     }
@@ -78,9 +94,9 @@ class CharacterViewModel extends ChangeNotifier {
 
   List<String> getAllSpecies() {
     List<String> spicesType = [];
-    if(state.hasData) {
+    if (state.hasData) {
       state.data?.forEach((value) {
-        if(!spicesType.contains(value.species)){
+        if (!spicesType.contains(value.species)) {
           spicesType.add(value.species);
         }
       });
@@ -89,5 +105,4 @@ class CharacterViewModel extends ChangeNotifier {
       return [];
     }
   }
-
 }

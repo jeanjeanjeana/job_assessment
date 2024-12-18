@@ -25,8 +25,7 @@ class CharacterDetailPage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Padding(
-                          padding:
-                          const EdgeInsets.only(
+                          padding: const EdgeInsets.only(
                               top: 16.0, right: 16.0, left: 16.0),
                           child: Text("Species: ${character.species}"),
                         ),
@@ -48,7 +47,8 @@ class CharacterDetailPage extends StatelessWidget {
                         ),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                          child: Text("Created: ${character.getFormatedDate()}"),
+                          child:
+                              Text("Created: ${character.getFormatedDate()}"),
                         ),
                         // Add any other data or widgets here
                       ],
