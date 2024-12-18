@@ -141,7 +141,7 @@ class _DashboardDataPageState extends State<DashboardDataPage> {
                                           padding:
                                               const EdgeInsets.only(left: 10.0),
                                           child: Text(
-                                            '- Number of spices: ${viewModel.getAllSpecies().length}',
+                                            '- Number of species: ${viewModel.getAllSpecies().length}',
                                             style: TextStyle(fontSize: 24),
                                           ),
                                         ),
@@ -149,7 +149,7 @@ class _DashboardDataPageState extends State<DashboardDataPage> {
                                           padding: const EdgeInsets.only(
                                               top: 10.0, left: 10.0),
                                           child: Text(
-                                            'Type of spices: ',
+                                            'Type of species: ',
                                             style: TextStyle(fontSize: 24),
                                           ),
                                         ),
@@ -269,7 +269,7 @@ class _DashboardDataPageState extends State<DashboardDataPage> {
                                           padding:
                                               const EdgeInsets.only(left: 10.0),
                                           child: Text(
-                                            '- Number of spices: ${viewModel.getAllSpecies().length}',
+                                            '- Number of species: ${viewModel.getAllSpecies().length}',
                                             style: TextStyle(fontSize: 24),
                                           ),
                                         ),
@@ -277,7 +277,7 @@ class _DashboardDataPageState extends State<DashboardDataPage> {
                                           padding: const EdgeInsets.only(
                                               top: 10.0, left: 10.0),
                                           child: Text(
-                                            'Type of spices: ',
+                                            'Type of species: ',
                                             style: TextStyle(fontSize: 24),
                                           ),
                                         ),
